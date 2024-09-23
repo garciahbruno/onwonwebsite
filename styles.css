@@ -58,7 +58,7 @@ header {
 /* Sidebar Navigation Compact */
 .sidebar {
     position: fixed;
-    top: 100px;  /* Move sidebar down to avoid overlap with the header */
+    top: 20px;  /* Move sidebar down to avoid overlap with the header */
     left: 20px;
     width: auto;
     background-color: white;
