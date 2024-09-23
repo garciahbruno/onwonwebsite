@@ -139,35 +139,25 @@ footer .social li a:hover {
     color: #f4c245;
 }
 /* Responsive Design for Mobile */
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
-    /* Adjust logo and header links for smaller screens */
+    /* Header with centered logo and right-aligned icons */
+    header {
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+
     .logo {
-        margin-left: 0;
         text-align: center;
+        flex-grow: unset;
     }
 
     .header-links {
         position: relative;
-        margin-top: 20px;
-        justify-content: center;
-    }
-
-    /* Sidebar collapse on mobile */
-    .sidebar {
-        position: static;
-        width: 100%;
-        margin-top: 80px;
-        text-align: center;
-    }
-
-    .sidebar ul {
-        flex-direction: row;  /* Make it horizontal for mobile */
-        justify-content: center;
-    }
-
-    .sidebar ul li {
-        margin-bottom: 0;
-        margin-right: 15px;
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        align-items: center;
     }
 
     /* Center and resize social icons */
@@ -176,12 +166,17 @@ footer .social li a:hover {
     }
 
     footer .social li a {
-        font-size: 24px;  /* Make the icons larger for mobile */
+        font-size: 20px;  /* Increase icon size */
     }
 
-    /* Contact info centered on smaller screens */
+    /* Center all the contact info text on smaller screens */
     .contact-info {
         margin-left: 0;
         padding: 100px 20px;
+    }
+
+    .search-bar {
+        margin: 30px auto;
+        max-width: 80%;
     }
 }
