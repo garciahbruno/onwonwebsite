@@ -6,11 +6,12 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Times New Roman', serif;
+    background-color: #fff;
     color: #111;
 }
 
+/* Header Section */
 header {
     display: flex;
     justify-content: space-between;
@@ -21,9 +22,9 @@ header {
 }
 
 .logo h1 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: normal;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #111;
 }
 
@@ -36,7 +37,9 @@ header {
     margin-left: 20px;
     color: #111;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .menu-icon {
@@ -50,11 +53,10 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 200px;
     height: 100%;
-    background-color: #f9f9f9;
-    border-right: 1px solid #ddd;
-    padding-top: 100px;
+    background-color: white;
+    padding-top: 120px;
 }
 
 .sidebar ul {
@@ -63,13 +65,13 @@ header {
 }
 
 .sidebar ul li {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .sidebar ul li a {
     text-decoration: none;
-    font-size: 16px;
-    color: #f4c245; /* Light Gold Color */
+    font-size: 18px;
+    color: #f4c245;
     font-weight: bold;
     text-transform: uppercase;
     transition: color 0.3s;
@@ -81,17 +83,19 @@ header {
 
 /* Contact Info Section */
 .contact-info {
-    margin-left: 300px; /* Adjust for the sidebar width */
+    margin-left: 250px;
     padding: 100px 20px;
+    text-align: left;
+    max-width: 800px;
 }
 
 .info-item {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .info-item p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.8;
     color: #111;
 }
 
@@ -103,7 +107,7 @@ header {
 footer {
     text-align: center;
     padding: 50px 0;
-    margin-left: 300px;
+    margin-left: 250px;
 }
 
 footer .social {
@@ -118,7 +122,7 @@ footer .social li {
 
 footer .social li a {
     color: #111;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     transition: color 0.3s;
 }
