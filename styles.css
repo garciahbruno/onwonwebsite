@@ -138,7 +138,7 @@ footer .social li a {
 footer .social li a:hover {
     color: #f4c245;
 }
-/* Responsive Design for Mobile */
+
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
     /* Header with centered logo and right-aligned icons */
@@ -178,5 +178,10 @@ footer .social li a:hover {
     .search-bar {
         margin: 30px auto;
         max-width: 80%;
+    }
+
+    /* Hide the sidebar on mobile */
+    .sidebar {
+        display: none;
     }
 }
