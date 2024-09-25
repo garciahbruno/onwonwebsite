@@ -170,12 +170,15 @@ footer .social li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 100%;
 }
 
 .gallery-item img {
     width: 100%; /* Full width of the item */
     height: auto; /* Keep aspect ratio */
     max-width: 350px; /* Limit the maximum size of images */
+    object-fit: cover; /* Ensures the image covers the box without distortion */
+    border-radius: 15px;
     transition: transform 0.3s ease-in-out; /* Add animation for hover effect */
 }
 
@@ -199,8 +202,8 @@ footer .social li a:hover {
     transition: opacity 0.3s ease-in-out;
 }
 
-.gallery-item:hover .project-info {
-    opacity: 1; /* Show overlay when hovered */
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .project-info p {
