@@ -160,16 +160,21 @@ footer .social li a:hover {
     text-align: center;
 }
 
+.gallery {
+    position: relative;  /* Set this to relative to use absolute positioning for items */
+}
+
 /* First Box Image Styling */
 .gallery-item img {
-    width: 300px;  /* Set the width of the box */
-    height: 300px; /* Set the height to make it a square */
+    width: 250px;  /* Set smaller width for the image */
+    height: 250px; /* Set height to keep it square */
     object-fit: cover;  /* Ensure the image fits inside the box */
     border-radius: 10px;  /* Optional: Adds rounded corners */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Default shadow */
 }
 
+/* Hover Effect */
 .gallery-item:hover img {
     transform: translateY(-10px);  /* Adds hover effect to raise the image */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  /* Darker shadow on hover */
@@ -177,9 +182,18 @@ footer .social li a:hover {
 
 /* Positioning the First Box */
 .gallery-item {
+    position: absolute; /* Use absolute positioning to place the image */
+    top: 200px; /* Adjust this to move the image vertically */
+    left: 400px; /* Adjust this to move the image horizontally */
+    justify-self: center; /* Keep the image centered */
+}
+
+/* Positioning the First Box */
+.gallery-item {
     grid-column: 1 / span 1;  /* Make sure it's in the first column */
     justify-self: center;     /* Center it horizontally */
 }
+
 
 /* Ensure responsiveness */
 @media (max-width: 768px) {
