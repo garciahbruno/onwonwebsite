@@ -160,10 +160,6 @@ footer .social li a:hover {
     text-align: center;
 }
 
-.gallery {
-    position: relative;  /* Set this to relative to use absolute positioning for items */
-}
-
 /* First Box Image Styling */
 .gallery-item img {
     width: 250px;  /* Set smaller width for the image */
@@ -188,28 +184,18 @@ footer .social li a:hover {
     justify-self: center; /* Keep the image centered */
 }
 
-/* Positioning the First Box */
-.gallery-item {
-    grid-column: 1 / span 1;  /* Make sure it's in the first column */
-    justify-self: center;     /* Center it horizontally */
-}
-
-
 /* Ensure responsiveness */
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: 1fr 1fr;  /* Two columns on smaller screens */
     }
-}
 
-@media (max-width: 480px) {
-    .gallery {
-        grid-template-columns: 1fr;  /* One column on mobile */
+    /* Hide the sidebar on mobile */
+    .sidebar {
+        display: none;
     }
-}
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-    /* Header with centered logo and right-aligned icons */
+
+    /* Header adjustments */
     header {
         justify-content: space-between;
         padding: 20px 20px;
@@ -229,10 +215,6 @@ footer .social li a:hover {
     }
 
     /* Center and resize social icons */
-    footer {
-        margin-left: 0;
-    }
-
     footer .social li a {
         font-size: 20px;  /* Increase icon size */
     }
@@ -242,14 +224,10 @@ footer .social li a:hover {
         margin-left: 0;
         padding: 100px 20px;
     }
+}
 
-    .search-bar {
-        margin: 30px auto;
-        max-width: 80%;
-    }
-
-    /* Hide the sidebar on mobile */
-    .sidebar {
-        display: none;
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;  /* One column on mobile */
     }
 }
