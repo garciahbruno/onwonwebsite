@@ -31,6 +31,16 @@ header {
     letter-spacing: 1px;
     color: #111;
 }
+.logo a {
+    text-decoration: none;  /* Removes the underline */
+    color: inherit;  /* Keeps the text color as it is */
+}
+
+/* Optional: If you want to customize the hover state */
+.logo a:hover {
+    color: inherit;  /* No color change on hover */
+    text-decoration: none;  /* No underline on hover */
+}
 
 .header-links {
     position: absolute;  /* Ensure header links are positioned on the right */
