@@ -151,25 +151,63 @@ footer .social li a:hover {
 /* Gallery Section */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
-    gap: 20px; /* Space between gallery items */
-    padding: 50px 20px; /* Add padding around the gallery */
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 40px; /* Space between the gallery items */
+    padding: 50px 20px;
+    justify-items: center; /* Center items horizontally */
+    text-align: center;
 }
 
 /* Gallery Item Styling */
-.gallery-item img {
-    width: 100%; /* Let the image take up the full width of the grid item */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures the image covers the container */
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to the image */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover effect */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    width: 300px; /* Fixed size for the items */
+    height: 400px; /* Adjust the height for your images */
 }
 
-/* Hover Effect */
+.gallery-item img {
+    width: 100%; /* Make sure the image fits the gallery item */
+    height: 100%; /* Ensures image covers the box */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    transition: transform 0.3s ease-in-out; /* Animation for hover effect */
+}
+
+/* Hover Effect: Zoom on Hover */
 .gallery-item:hover img {
-    transform: translateY(-10px); /* Move the image up slightly on hover */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    transform: scale(1.1); /* Slight zoom when hovered */
+}
+
+/* Overlay Text (Project Name and Price) */
+.gallery-item .overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    color: #f4c245; /* Thug Club style gold color */
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.gallery-item .overlay p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.gallery-item .overlay span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #fff; /* White color for price or project details */
 }
 
 /* Responsive Design */
