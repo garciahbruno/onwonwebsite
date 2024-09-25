@@ -103,7 +103,10 @@ header {
 
 /* Contact Info Section */
 .contact-info {
-    padding: 150px 20px;  /* Adjust padding to compensate for the fixed header */
+    padding-top: 150px;
+    
+    
+    padding-left: 10px;  /* Adjust padding to compensate for the fixed header */
     text-align: center;
 }
 
@@ -152,7 +155,7 @@ footer .social li a:hover {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-    gap: 20px; /* Adjust this for more/less spacing */
+    gap: 5px; /* Adjust this for more/less spacing */
     padding: 50px 20px;
     justify-content: center; /* Center the items in the middle of the page */
     text-align: center;
