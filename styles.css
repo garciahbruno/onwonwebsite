@@ -166,16 +166,16 @@ footer .social li a:hover {
 .gallery-item {
     position: relative;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%; /* Fill the container */
     padding-top: 100%;
 }
 
 .gallery-item img {
-    width: 100%; /* Full width of the item */
-    height: auto; /* Keep aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Fill the container */
+    height: 100%; /* Maintain the square shape */
     max-width: 350px; /* Limit the maximum size of images */
     object-fit: cover; /* Ensures the image covers the box without distortion */
     border-radius: 15px;
