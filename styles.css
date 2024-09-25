@@ -148,6 +148,51 @@ footer .social li a {
 footer .social li a:hover {
     color: #f4c245;
 }
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    gap: 20px; /* Space between the gallery items */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Zoom effect on hover */
+.gallery-item:hover img {
+    transform: scale(1.05); /* Zoom in the image slightly on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr; /* 2 columns for tablet screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 1 column for mobile screens */
+    }
+}
+
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
