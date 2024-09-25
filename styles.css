@@ -149,47 +149,10 @@ footer .social li a:hover {
     color: #f4c245;
 }
 
-/* Gallery Section */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Grid with 3 columns */
-    gap: 20px; /* Space between the gallery items */
-    padding: 50px 20px;
-    justify-items: center; /* Center items horizontally */
-    align-items: start; /* Align items to the top */
-    text-align: center;
-}
-
-/* First Box Image Styling */
-.gallery-item img {
-    width: 250px;  /* Set smaller width for the image */
-    height: 250px; /* Set height to keep it square */
-    object-fit: cover;  /* Ensure the image fits inside the box */
-    border-radius: 10px;  /* Optional: Adds rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Default shadow */
-}
-
-/* Hover Effect */
-.gallery-item:hover img {
-    transform: translateY(-10px);  /* Adds hover effect to raise the image */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  /* Darker shadow on hover */
-}
-
-/* Positioning the First Box */
-.gallery-item {
-    position: absolute; /* Use absolute positioning to place the image */
-    top: 200px; /* Adjust this to move the image vertically */
-    left: 400px; /* Adjust this to move the image horizontally */
-    justify-self: center; /* Keep the image centered */
-}
 
 /* Ensure responsiveness */
 @media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: 1fr 1fr;  /* Two columns on smaller screens */
-    }
-
+    
     /* Hide the sidebar on mobile */
     .sidebar {
         display: none;
@@ -226,8 +189,3 @@ footer .social li a:hover {
     }
 }
 
-@media (max-width: 480px) {
-    .gallery {
-        grid-template-columns: 1fr;  /* One column on mobile */
-    }
-}
